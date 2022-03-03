@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "77a9287f-a188-4e4c-988e-13fe0faae60a",
+		"name": "Doc Api",
+		"description": "# Introduction\nEsta es una api de prueba con jSON WEB TOKEN\n\n# Overview\nla contraseña para generar token es 123456\n\n# Authentication\nJSON WEB TOKEN\n\n# Error Codes\nWhat errors and status codes can a user expect?\n\n# Rate limit\nIs there a limit to the number of requests a user can send?",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Obtener Token",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "Obtener Token",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Username\": \"maryourie.api\",\r\n  \"Password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http:localhost:49313/api/Account",
+							"host": [
+								"http:localhost"
+							],
+							"port": "49313",
+							"path": [
+								"api",
+								"Account"
+							]
+						}
+					},
+					"_postman_previewlanguage": "",
+					"header": [
+						{}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date"
+						}
+					],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "http://localhost:49313/api/GRUPO",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6Im1hcnlvdXJpZS5hcGkiLCJuYmYiOjE2NDYzMjY2NjEsImV4cCI6MTY0NjMyNjcyMSwiaWF0IjoxNjQ2MzI2NjYxLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjQ5MzEzIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo0OTMxMyJ9.VwkNrtMZxEiA_RSETAKRqOJb3iQn5Ny-rVHFonvnEwI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"ID\": \"B445842F-0E25-4E98-A69E-26C533D8878E\",\r\n  \"DESC\": \"Higiene\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:49313/api/GRUPO",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "49313",
+					"path": [
+						"api",
+						"GRUPO"
+					]
+				},
+				"description": "GUardar nuevos grupos"
+			},
+			"response": []
+		}
+	]
+}

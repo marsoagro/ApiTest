@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1800
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarsoApi", "MarsoApi\MarsoApi.csproj", "{51226D50-CA15-44AC-BC54-CCD3669AD6A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{D809B9A8-3670-4A26-856C-DB68616C3323}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51226D50-CA15-44AC-BC54-CCD3669AD6A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51226D50-CA15-44AC-BC54-CCD3669AD6A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51226D50-CA15-44AC-BC54-CCD3669AD6A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51226D50-CA15-44AC-BC54-CCD3669AD6A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D809B9A8-3670-4A26-856C-DB68616C3323}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D809B9A8-3670-4A26-856C-DB68616C3323}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D809B9A8-3670-4A26-856C-DB68616C3323}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D809B9A8-3670-4A26-856C-DB68616C3323}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5F32004F-13A4-436E-A8CB-F05975AD6C17}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev.azure.com/devcorpsoft
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MarsoApi\\MarsoApi.csproj
+		SccProjectName1 = MarsoApi
+		SccLocalPath1 = MarsoApi
+		SccProjectUniqueName2 = UnitTestProject1\\UnitTestProject1.csproj
+		SccProjectName2 = UnitTestProject1
+		SccLocalPath2 = UnitTestProject1
+	EndGlobalSection
+EndGlobal
